@@ -1,0 +1,104 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
+| Date         : Mon Dec  9 21:19:24 2024
+| Host         : MDD-ECE-HHPG853 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'take2_rst_clk_wiz_1_100M_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of take2_rst_clk_wiz_1_100M_1 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 15)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
+| Date         : Mon Dec  9 21:19:24 2024
+| Host         : MDD-ECE-HHPG853 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'take2_clk_wiz_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of take2_clk_wiz_1_1 (xilinx.com:ip:clk_wiz:6.0 (Rev. 14)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
+| Date         : Mon Dec  9 21:19:24 2024
+| Host         : MDD-ECE-HHPG853 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'take2_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of take2_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 34)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.1 (win64) Build 5094488 Fri Jun 14 08:59:21 MDT 2024
+| Date         : Fri Dec  6 18:06:22 2024
+| Host         : MDD-ECE-HHPG853 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'take2_myip_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of take2_myip_0_0 (slu.edu:user:myip:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'take2_myip_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'reg0'
+
+-Upgrade has added port 'reg1'
+
+-Upgrade has added port 'reg2'
+
+-Upgrade has added port 'reg3'
+
+-Upgrade has added port 'reg4'
+
+-Upgrade has added port 'reg5'
+
+-Upgrade has added port 'reg6'
+
+-Upgrade has added port 'reg7'
+
+

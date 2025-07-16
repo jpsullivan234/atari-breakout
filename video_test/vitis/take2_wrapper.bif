@@ -1,0 +1,5 @@
+all:
+{
+  breakout\_ide\bitstream\take2_wrapper.bit
+  breakout\debug\breakout.elf
+}

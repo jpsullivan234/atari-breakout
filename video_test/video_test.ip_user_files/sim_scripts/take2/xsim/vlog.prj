@@ -1,0 +1,10 @@
+verilog xil_defaultlib --include "../../../../video_test.gen/sources_1/bd/take2/ipshared/ec67/hdl" --include "../../../../video_test.gen/sources_1/bd/take2/ipshared/3242" \
+"../../../bd/take2/ip/take2_lmb_bram_1/sim/take2_lmb_bram_1.v" \
+"../../../bd/take2/ip/take2_xbar_0/sim/take2_xbar_0.v" \
+"../../../bd/take2/ip/take2_clk_wiz_1_1/take2_clk_wiz_1_1_clk_wiz.v" \
+"../../../bd/take2/ip/take2_clk_wiz_1_1/take2_clk_wiz_1_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

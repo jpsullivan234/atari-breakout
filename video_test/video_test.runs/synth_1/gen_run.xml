@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1734230279" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/take2_wrapper.dcp">
+  <File Type="PA-TCL" Name="take2_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="take2_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="take2_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="take2_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="take2_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="take2_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/vga_driver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ball.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/brick.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgb_combiner.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/paddle.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scoreboard.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/take2/take2.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/take2/hdl/take2_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mover.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="take2_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/take2_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="take2_myip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_vga_driver_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_ball_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_rgb_combiner_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_clk_wiz_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_bricks_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_paddle_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_scoreboard_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_ilmb_bram_if_cntlr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_lmb_bram_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_rst_clk_wiz_1_100M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_mdm_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_auto_pc_0"/>
+</GenRun>

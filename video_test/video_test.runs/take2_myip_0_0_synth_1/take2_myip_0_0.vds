@@ -1,0 +1,326 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Fri Dec  6 18:06:59 2024
+# Process ID: 12772
+# Current directory: C:/Users/jsullivan4/video_test/video_test.runs/take2_myip_0_0_synth_1
+# Command line: vivado.exe -log take2_myip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source take2_myip_0_0.tcl
+# Log file: C:/Users/jsullivan4/video_test/video_test.runs/take2_myip_0_0_synth_1/take2_myip_0_0.vds
+# Journal file: C:/Users/jsullivan4/video_test/video_test.runs/take2_myip_0_0_synth_1\vivado.jou
+# Running On        :MDD-ECE-HHPG853
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+# CPU Frequency     :2904 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :34058 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36205 MB
+# Available Virtual :20760 MB
+#-----------------------------------------------------------
+source take2_myip_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 535.016 ; gain = 196.875
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jsullivan4/ip_repo/myip_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/jsullivan4/ip_repo/myip_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jsullivan4/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: take2_myip_0_0
+Command: synth_design -top take2_myip_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20340
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1396.574 ; gain = 447.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'take2_myip_0_0' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_myip_0_0/synth/take2_myip_0_0.vhd:90]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'myip' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip.vhd:5' bound to instance 'U0' of component 'myip' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_myip_0_0/synth/take2_myip_0_0.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'myip' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip.vhd:57]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'myip_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'myip_slave_lite_v1_0_S00_AXI_inst' of component 'myip_slave_lite_v1_0_S00_AXI' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'myip_slave_lite_v1_0_S00_AXI' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip_slave_lite_v1_0_S00_AXI.vhd:93]
+INFO: [Synth 8-226] default block is never used [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip_slave_lite_v1_0_S00_AXI.vhd:233]
+INFO: [Synth 8-256] done synthesizing module 'myip_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip_slave_lite_v1_0_S00_AXI.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'myip' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'take2_myip_0_0' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_myip_0_0/synth/take2_myip_0_0.vhd:90]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/09ef/hdl/myip_slave_lite_v1_0_S00_AXI.vhd:336]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[4] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[3] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[2] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[1] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[0] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module myip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1515.988 ; gain = 566.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1515.988 ; gain = 566.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1515.988 ; gain = 566.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1515.988 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1585.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1586.211 ; gain = 0.316
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'myip_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'myip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   waddr |                              010 |                               10
+                   wdata |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'one-hot' in module 'myip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   raddr |                               01 |                               10
+                   rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'myip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   8 Input   32 Bit        Muxes := 8     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[31] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[30] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[29] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[28] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[27] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[26] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[25] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[24] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[23] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[22] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[21] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[20] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[19] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[18] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[17] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[16] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[15] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[14] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[13] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[12] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[11] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[10] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[9] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[8] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[7] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[6] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[5] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[4] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[3] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[2] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[1] driven by constant 0
+INFO: [Synth 8-3917] design take2_myip_0_0 has port s00_axi_rdata[0] driven by constant 0
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_araddr[4] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_araddr[3] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_araddr[2] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_araddr[1] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_araddr[0] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module take2_myip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module take2_myip_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     3|
+|4     |LUT4 |     1|
+|5     |LUT5 |    34|
+|6     |LUT6 |    11|
+|7     |FDRE |   268|
+|8     |FDSE |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1586.211 ; gain = 566.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1586.211 ; gain = 636.750
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1586.211 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1586.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 283738d8
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1586.211 ; gain = 1039.055
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1586.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jsullivan4/video_test/video_test.runs/take2_myip_0_0_synth_1/take2_myip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP take2_myip_0_0, cache-ID = 8191fafca4eb6cff
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1586.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jsullivan4/video_test/video_test.runs/take2_myip_0_0_synth_1/take2_myip_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file take2_myip_0_0_utilization_synth.rpt -pb take2_myip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 18:07:43 2024...

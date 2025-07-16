@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+// Vivado v2024.1.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Thursday December 12, 2024 - 11:01:27 pm, from:
+//
+//     Map file     - c:\Users\jsullivan4\video_test\video_test.gen\sources_1\bd\take2\take2.bmm
+//     Data file(s) - c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_microblaze_0_1/data/mb_bootloop_le.elf
+//
+// Address space 'take2_i_microblaze_0.take2_i_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

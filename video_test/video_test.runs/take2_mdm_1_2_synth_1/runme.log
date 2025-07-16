@@ -1,0 +1,973 @@
+
+*** Running vivado
+    with args -log take2_mdm_1_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source take2_mdm_1_2.tcl
+
+
+
+****** Vivado v2024.1.1 (64-bit)
+  **** SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+  **** IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+  **** SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+  **** Start of session at: Sat Dec 14 17:46:21 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source take2_mdm_1_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 571.977 ; gain = 234.758
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jsullivan4/ip_repo/myip_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/jsullivan4/ip_repo/myip_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jsullivan4/ip_repo/myip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: take2_mdm_1_2
+Command: synth_design -top take2_mdm_1_2 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3848
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1439.223 ; gain = 448.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'take2_mdm_1_2' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/synth/take2_mdm_1_2.vhd:144]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DEVICE bound to: xc7a35t - type: string 
+	Parameter C_REVISION bound to: (null) - type: string 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_BSCANID bound to: 76547328 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_UART bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 1 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 1 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MDM' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:12681' bound to instance 'U0' of component 'MDM' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/synth/take2_mdm_1_2.vhd:1808]
+INFO: [Synth 8-638] synthesizing module 'MDM' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:14365]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:327' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:15982]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:351]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:351]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-3491] module 'MB_LUT1' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1540' bound to instance 'LUT1_I' of component 'MB_LUT1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:16000]
+INFO: [Synth 8-638] synthesizing module 'MB_LUT1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1554]
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1576]
+INFO: [Synth 8-256] done synthesizing module 'MB_LUT1' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1554]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter PRESELECT_I0 bound to: 1 - type: bool 
+	Parameter PRESELECT_I1 bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'MB_BUFGCTRL' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:480' bound to instance 'BUFGCTRL_DRCK' of component 'MB_BUFGCTRL' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:16389]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFGCTRL' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:511]
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE0_INVERTED bound to: 1'b0 
+	Parameter IS_CE1_INVERTED bound to: 1'b0 
+	Parameter IS_I0_INVERTED bound to: 1'b0 
+	Parameter IS_I1_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE0_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE1_INVERTED bound to: 1'b0 
+	Parameter IS_S0_INVERTED bound to: 1'b0 
+	Parameter IS_S1_INVERTED bound to: 1'b0 
+	Parameter PRESELECT_I0 bound to: 1 - type: bool 
+	Parameter PRESELECT_I1 bound to: 0 - type: bool 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFGCTRL' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:534]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFGCTRL' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:511]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter PRESELECT_I0 bound to: 1 - type: bool 
+	Parameter PRESELECT_I1 bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'MB_BUFGCTRL' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:480' bound to instance 'BUFGCTRL_UPDATE' of component 'MB_BUFGCTRL' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:16423]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'busy_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:312]
+INFO: [Synth 8-256] done synthesizing module 'xil_scan_reset_control' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:312]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'update_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:16499]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 1 - type: integer 
+	Parameter C_REG_NUM_CE bound to: 8 - type: integer 
+	Parameter C_REG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 1 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 1 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MDM_Core' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:5800' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:16619]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:7037]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'config_scan_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:7720]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'sel_n_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:7730]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'shift_n_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:7740]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'TX_Buffer_Empty_FDRE' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:7979]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:589]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:618]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:589]
+INFO: [Synth 8-226] default block is never used [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:8368]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'bus2ip_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:8416]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 1 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 1 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3084' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:10431]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3357]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'config_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3666]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'sel_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3674]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDC_1' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:753' bound to instance 'FDC_I' of component 'MB_FDC_1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3731]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:769]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:790]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:769]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:812' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3741]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:829]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:852]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:829]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000101100111 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3935]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter INIT bound to: 16'b0000000101100111 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:903]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100001011100111 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3953]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter INIT bound to: 16'b0100001011100111 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:903]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized1' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000100011 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_3' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3973]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized3' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter INIT bound to: 16'b0000000000100011 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:903]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized3' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100010001000011 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4024]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized5' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter INIT bound to: 16'b0100010001000011 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:903]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized5' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0101100001001101 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4042]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized7' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter INIT bound to: 16'b0101100001001101 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:903]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized7' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRSE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:960' bound to instance 'Ext_BRK_FDRSE' of component 'MB_FDRSE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4467]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRSE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:986]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRSE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1042]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRSE' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:986]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'data_cmd_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4510]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'SRL_FIFO' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1959' bound to instance 'RX_FIFO_I' of component 'SRL_FIFO' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4611]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1979]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1087]
+INFO: [Synth 8-113] binding component instance 'Native_I1' to cell 'MUXCY_L' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1098]
+INFO: [Synth 8-113] binding component instance 'Native_I2' to cell 'XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1105]
+INFO: [Synth 8-256] done synthesizing module 'MB_MUXCY_XORCY' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1087]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1167' bound to instance 'XORCY_I' of component 'MB_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2123]
+INFO: [Synth 8-638] synthesizing module 'MB_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1181]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1191]
+INFO: [Synth 8-256] done synthesizing module 'MB_XORCY' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1181]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized9' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:903]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized9' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:899]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:875' bound to instance 'SRL16E_I' of component 'MB_SRL16E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2150]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1979]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'SRL_FIFO' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1959' bound to instance 'TX_FIFO_I' of component 'SRL_FIFO' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4633]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'data_cmd_reset_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4730]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'force_lock_cmd_rst_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4919]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:303' bound to instance 'access_lock_cmd_rst_i' of component 'xil_scan_reset_control' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:4947]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:3357]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:7037]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_ADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_HAS_FIFO_PORTS bound to: 1 - type: bool 
+	Parameter C_HAS_DIRECT_PORT bound to: 0 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'bus_master' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2287' bound to instance 'bus_master_I' of component 'bus_master' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:17887]
+INFO: [Synth 8-638] synthesizing module 'bus_master' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2402]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_DATA_BITS bound to: 32 - type: integer 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'SRL_FIFO' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1959' bound to instance 'Read_FIFO' of component 'SRL_FIFO' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2511]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO__parameterized2' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1979]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1071' bound to instance 'MUXCY_L_I' of component 'MB_MUXCY_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2109]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1167' bound to instance 'XORCY_I' of component 'MB_XORCY' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2123]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_FDRE' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:572' bound to instance 'FDRE_I' of component 'MB_FDRE' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2133]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+INFO: [Synth 8-638] synthesizing module 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1233]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1281]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRLC32E' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1233]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_SRLC32E' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1209' bound to instance 'SRLC32E_I' of component 'MB_SRLC32E' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2170]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO__parameterized2' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1979]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_DATA_BITS bound to: 32 - type: integer 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'SRL_FIFO' declared at 'c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:1959' bound to instance 'Write_FIFO' of component 'SRL_FIFO' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2530]
+INFO: [Synth 8-226] default block is never used [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2428]
+INFO: [Synth 8-226] default block is never used [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2723]
+INFO: [Synth 8-226] default block is never used [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2910]
+INFO: [Synth 8-256] done synthesizing module 'bus_master' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2402]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:14365]
+INFO: [Synth 8-256] done synthesizing module 'take2_mdm_1_2' (0#1) [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/synth/take2_mdm_1_2.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element Has_FIFO.axi_dwr_sel_reg was removed.  [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2575]
+WARNING: [Synth 8-6014] Unused sequential element Has_FIFO.lmb_rd_next_reg was removed.  [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/feb7/hdl/mdm_v3_2_vh_rfs.vhd:2584]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+WARNING: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[4] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRLC32E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[31] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[30] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[29] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[28] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[27] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[26] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[25] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[24] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[23] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[22] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[21] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[20] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[19] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[18] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[17] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[16] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[15] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[14] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[13] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[12] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[11] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[10] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[9] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[8] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[7] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[6] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[5] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[4] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[3] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[2] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[1] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Addr[0] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Len[4] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Len[3] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Len[2] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Len[1] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Len[0] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[31] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[30] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[29] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[28] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[27] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[26] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[25] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[24] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[23] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[22] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[21] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[20] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[19] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[18] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[17] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[16] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[15] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[14] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[13] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[12] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[11] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[10] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[9] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[8] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[7] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[6] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[5] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[4] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[3] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[2] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[1] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Direct_Wr_Data[0] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module bus_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRL16E__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRL16E__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRL16E__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRL16E__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRL16E__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Config_Reset in module MB_SRL16E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rst in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DbgReg_DRCK in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DbgReg_UPDATE in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AXI_Transaction in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AXI_Instr_Overrun in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AXI_Data_Overrun in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RESET in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Master_data_exists in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Master_dwr_done in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Master_dwr_resp[1] in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Master_dwr_resp[0] in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Dbg_Trig_In_0[0] in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Dbg_Trig_In_0[1] in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Dbg_Trig_In_0[2] in module JTAG_CONTROL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Dbg_Trig_In_0[3] in module JTAG_CONTROL is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1596.863 ; gain = 606.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1596.863 ; gain = 606.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1596.863 ; gain = 606.223
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1596.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/jsullivan4/video_test/video_test.runs/take2_mdm_1_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jsullivan4/video_test/video_test.runs/take2_mdm_1_2_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2_ooc_trace.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2_ooc_trace.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/jsullivan4/video_test/video_test.gen/sources_1/bd/take2/ip/take2_mdm_1_2/take2_mdm_1_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/take2_mdm_1_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/take2_mdm_1_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1692.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDRE_1 => FDRE (inverted pins: C): 1 instance 
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 1 instance 
+  MUXCY_L => MUXCY: 14 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1692.816 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/jsullivan4/video_test/video_test.runs/take2_mdm_1_2_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Use_Dbg_Reg_Access.state_reg' in module 'MDM_Core'
+INFO: [Synth 8-802] inferred FSM for state register 'Has_FIFO.lmb_state_reg' in module 'bus_master'
+INFO: [Synth 8-802] inferred FSM for state register 'Has_FIFO.rd_state_reg' in module 'bus_master'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'bus_master'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+               select_dr |                             0001 |                             0001
+              capture_dr |                             0010 |                             0010
+                shift_dr |                             0011 |                             0011
+                   exit1 |                             0100 |                             0100
+                   pause |                             0101 |                             0101
+                   exit2 |                             0110 |                             0110
+               update_dr |                             0111 |                             0111
+               data_done |                             1000 |                             1001
+                cmd_done |                             1001 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Use_Dbg_Reg_Access.state_reg' using encoding 'sequential' in module 'MDM_Core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+           wait_on_ready |                               10 |                               10
+           wait_on_bchan |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'bus_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                         00000001 |                             0000
+                start_wr |                         00000010 |                             0011
+                 wait_wr |                         00000100 |                             0100
+               sample_wr |                         00001000 |                             0111
+                start_rd |                         00010000 |                             0001
+                 wait_rd |                         00100000 |                             0010
+               sample_rd |                         01000000 |                             0101
+                  iSTATE |                         10000000 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Has_FIFO.lmb_state_reg' using encoding 'one-hot' in module 'bus_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+           wait_on_ready |                               10 |                               10
+            wait_on_data |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Has_FIFO.rd_state_reg' using encoding 'sequential' in module 'bus_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                             0010 |                               00
+                 sm_read |                             1000 |                               01
+                sm_write |                             0100 |                               10
+                 sm_resp |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/MDM_Core_I1/JTAG_CONTROL_I/Use_UART.data_cmd_reset_i' (xil_scan_reset_control) to 'U0/MDM_Core_I1/JTAG_CONTROL_I/Use_Dbg_Mem_Access.data_cmd_reset_i'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 18    
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 120   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	  10 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 3     
+	  10 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 11    
+	   7 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
+	  10 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 5     
+	   8 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 100   
+	   3 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 25    
+	   8 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (Use_Bus_MASTER.bus_master_I/FSM_onehot_Has_FIFO.lmb_state_reg[7]) is unused and will be removed from module MDM.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|MDM         | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[26] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM         | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[10] | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM         | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[3]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BSCANE2  |     1|
+|2     |BUFGCTRL |     2|
+|3     |LUT1     |     9|
+|4     |LUT2     |    34|
+|5     |LUT3     |    80|
+|6     |LUT4     |   134|
+|7     |LUT5     |    94|
+|8     |LUT6     |   297|
+|9     |MUXCY_L  |    14|
+|10    |MUXF7    |     2|
+|11    |SRL16E   |    24|
+|12    |SRLC32E  |    64|
+|13    |XORCY    |    18|
+|14    |FDCE     |    36|
+|15    |FDC      |     1|
+|16    |FDPE     |     8|
+|17    |FDRE     |   524|
+|19    |FDSE     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1692.816 ; gain = 702.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4211 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1692.816 ; gain = 606.223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1692.816 ; gain = 702.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1692.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1692.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 6 instances
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDRE_1 => FDRE (inverted pins: C): 1 instance 
+
+Synth Design complete | Checksum: 3477d477
+INFO: [Common 17-83] Releasing license: Synthesis
+219 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1692.816 ; gain = 1100.082
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1692.816 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jsullivan4/video_test/video_test.runs/take2_mdm_1_2_synth_1/take2_mdm_1_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP take2_mdm_1_2, cache-ID = 0ed10f7ed309260f
+INFO: [Coretcl 2-1174] Renamed 145 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1692.816 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jsullivan4/video_test/video_test.runs/take2_mdm_1_2_synth_1/take2_mdm_1_2.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file take2_mdm_1_2_utilization_synth.rpt -pb take2_mdm_1_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 14 17:47:30 2024...

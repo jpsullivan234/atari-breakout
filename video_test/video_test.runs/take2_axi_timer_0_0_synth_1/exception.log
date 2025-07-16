@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\jsullivan4\video_test\video_test.runs\take2_axi_timer_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

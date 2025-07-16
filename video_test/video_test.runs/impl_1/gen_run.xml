@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1734230337">
+  <File Type="ROUTE-PWR" Name="take2_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="take2_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="take2_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="take2_wrapper_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="take2_wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="take2_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="take2_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="take2_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="take2_wrapper.bit"/>
+  <File Type="BG-DRC" Name="take2_wrapper.drc"/>
+  <File Type="BG-BGN" Name="take2_wrapper.bgn"/>
+  <File Type="BG-BIN" Name="take2_wrapper.bin"/>
+  <File Type="BITSTR-RBT" Name="take2_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="take2_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="take2_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="take2_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="take2_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="take2_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="take2_wrapper.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="take2_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="take2_wrapper.hwdef"/>
+  <File Type="PLACE-IO" Name="take2_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="take2_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="take2_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="take2_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="take2_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="take2_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="take2_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="take2_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="take2_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="take2_wrapper_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="take2_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="take2_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="take2_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="take2_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="take2_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="take2_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="take2_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="take2_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="take2_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="take2_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="take2_wrapper_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="take2_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="take2_wrapper_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="take2_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="take2_wrapper_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="take2_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="take2_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="take2_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="take2_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="take2_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="take2_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="take2_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="take2_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="take2_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="take2_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="take2_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="take2_wrapper_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="take2_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="take2_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="take2_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="take2_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="take2_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="take2_wrapper.rbd"/>
+  <File Type="ROUTE-RQS" Name="take2_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="take2_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/vga_driver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ball.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/brick.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgb_combiner.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/paddle.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scoreboard.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/take2/take2.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/take2/hdl/take2_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mover.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/vitis/breakout/Debug/breakout.elf">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="take2"/>
+        <Attr Name="ScopedToCell" Val="microblaze_0"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="take2_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/take2_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="take2_myip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_vga_driver_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_ball_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_rgb_combiner_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_clk_wiz_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_bricks_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_paddle_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_scoreboard_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_ilmb_bram_if_cntlr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_lmb_bram_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_rst_clk_wiz_1_100M_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_mdm_1_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="take2_auto_pc_0"/>
+</GenRun>

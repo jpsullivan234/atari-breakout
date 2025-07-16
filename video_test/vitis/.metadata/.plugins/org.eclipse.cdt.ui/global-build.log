@@ -1,0 +1,5 @@
+Nothing to build in platform 'take2_wrapper'
+
+17:40:40 **** Incremental Build of configuration Debug for project breakout ****
+make all 
+make: Nothing to be done for 'all'.

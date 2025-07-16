@@ -1,0 +1,23 @@
+vhdl xil_defaultlib  \
+"../../../bd/take2/ip/take2_vga_driver_0_0/sim/take2_vga_driver_0_0.vhd" \
+"../../../bd/take2/ip/take2_microblaze_0_1/sim/take2_microblaze_0_1.vhd" \
+"../../../bd/take2/ip/take2_dlmb_v10_1/sim/take2_dlmb_v10_1.vhd" \
+"../../../bd/take2/ip/take2_ilmb_v10_1/sim/take2_ilmb_v10_1.vhd" \
+"../../../bd/take2/ip/take2_dlmb_bram_if_cntlr_1/sim/take2_dlmb_bram_if_cntlr_1.vhd" \
+"../../../bd/take2/ip/take2_ilmb_bram_if_cntlr_1/sim/take2_ilmb_bram_if_cntlr_1.vhd" \
+"../../../bd/take2/ip/take2_mdm_1_1/sim/take2_mdm_1_1.vhd" \
+"../../../bd/take2/ip/take2_rst_clk_wiz_1_100M_1/sim/take2_rst_clk_wiz_1_100M_1.vhd" \
+"../../../bd/take2/ip/take2_ball_0_0/sim/take2_ball_0_0.vhd" \
+"../../../bd/take2/ip/take2_bricks_0_0/sim/take2_bricks_0_0.vhd" \
+"../../../bd/take2/ip/take2_rgb_combiner_0_0/sim/take2_rgb_combiner_0_0.vhd" \
+"../../../bd/take2/ipshared/09ef/hdl/myip_slave_lite_v1_0_S00_AXI.vhd" \
+"../../../bd/take2/ipshared/09ef/hdl/myip.vhd" \
+"../../../bd/take2/ip/take2_myip_0_0/sim/take2_myip_0_0.vhd" \
+"../../../bd/take2/ip/take2_paddle_0_0/sim/take2_paddle_0_0.vhd" \
+"../../../bd/take2/ip/take2_scoreboard_0_0/sim/take2_scoreboard_0_0.vhd" \
+"../../../bd/take2/ip/take2_axi_gpio_0_0/sim/take2_axi_gpio_0_0.vhd" \
+"../../../bd/take2/ip/take2_axi_timer_0_0/sim/take2_axi_timer_0_0.vhd" \
+"../../../bd/take2/sim/take2.vhd" \
+
+# Do not sort compile order
+nosort
